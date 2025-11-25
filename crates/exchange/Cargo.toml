@@ -1,0 +1,42 @@
+[package]
+name = "meridian-exchange"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+meridian-core = { path = "../core" }
+
+# Async
+tokio.workspace = true
+tokio-stream.workspace = true
+futures.workspace = true
+
+# HTTP & WebSocket
+reqwest.workspace = true
+tokio-tungstenite.workspace = true
+
+# Alpaca client
+apca.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# Time
+chrono.workspace = true
+
+# Financial math
+rust_decimal.workspace = true
+
+# Data structures
+parking_lot.workspace = true
+
+# Logging
+tracing.workspace = true
+
+[dev-dependencies]
+mockall.workspace = true
